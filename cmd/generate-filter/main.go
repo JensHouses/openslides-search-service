@@ -17,8 +17,8 @@ import (
 )
 
 const (
-	backend   = "https://raw.githubusercontent.com/OpenSlides/openslides-backend"
-	branch    = "master"
+	backend   = "https://raw.githubusercontent.com/JensHouses/openslides-backend"
+	branch    = "dev"
 	modelsYML = "global/meta/models.yml"
 	path      = backend + "/" + branch + "/" + modelsYML
 )
