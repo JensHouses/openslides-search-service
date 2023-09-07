@@ -13,7 +13,7 @@ COPY pkg pkg
 FROM base as builder
 RUN go build -o openslides-search-service cmd/searchd/main.go
 RUN go build -o openslides-search-generate-filter cmd/generate-filter/main.go
-RUN wget https://github.com/OpenSlides/openslides-backend/raw/main/global/meta/models.yml
+RUN wget https://github.com/JensHouses/openslides-backend/raw/main/global/meta/models.yml
 RUN ./openslides-search-generate-filter --output search.yml
 
 
